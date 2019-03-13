@@ -1,7 +1,56 @@
-@charset "utf-8"; 
-/*css document*/ 
+@charset "utf-8";
+/*css document*/
 
-.hidden {
+.hidden{
 	display: none;
 }
- 
+
+#siteContainer{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.goldBar{
+	height: 20px;
+	width: 100%;
+	background-color: #998819;
+}
+
+#mainHeader{
+	height: 200px;
+	background-color: #092540;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainNav{
+	width: 500px;
+	text-align: center;
+}
+
+a:link{
+	color: #fff; text-decoration: none;
+}
+
+a:visited{
+	color: #fff; text-decoration: none;
+}
+
+a:hover{
+	color: #ccc; text-decoration: none;
+}
+
+a:active{
+	color: #fff; text-decoration: none;
+}
+
+p{
+	font-size: 30px;
+	color: #998819;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.navLinks{
+	margin-top: 80px;
+}
