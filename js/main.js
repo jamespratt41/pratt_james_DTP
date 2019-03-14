@@ -1,15 +1,30 @@
 console.log("javascript linked up")
 
-const header = document.querySelector("#mainHeader")
+const jamesBio = document.querySelector("#james")
+const grahamBio = document.querySelector("#graham")
 
-// document.getElementById("myBtn").addEventListener("click", function(){
-//   document.getElementById("mainHeader").style.display = "none";
-//   });
+// check to see if james button has been pressed.
+document.getElementById("jamesbtn").addEventListener("click", function(){
 
-document.getElementById("myBtn").addEventListener("click", function(){
+// check to see what the display setting is, then change display to none or flex
+  if(jamesBio.style.display != "flex"){
+      jamesBio.style.display = "flex";
+    }else if (jamesBio.style.display != "none"){
+      jamesBio.style.display = "none";
+    }
+    grahamBio.style.display = "none"
+    });
 
-  if(header.style.display != "none"){
-      header.style.display = "none";
-    }else if (header.style.display == "none"){
-      header.style.display = "";    }
-  });
+
+// check to see if graham button has been pressed.
+document.getElementById("grahambtn").addEventListener("click", function(){
+
+// check to see what the display setting is, then change display to none or flex
+
+  if(grahamBio.style.display != "flex"){
+      grahamBio.style.display = "flex";
+    }else if (grahamBio.style.display == "flex"){
+      grahamBio.style.display = "none";
+    }
+    jamesBio.style.display = "none"
+    });
